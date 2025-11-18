@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oppgave 3</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <title>Oppgave 3 Admin</title>
 </head>
 <body>
     <h1>Høgskolen JS</h1>
     <section>
-        <button>Vis alle ansatte</button>
-        <button>Vis undervisere</button>
-        <button>Vis administrasjon</button><br>
+      <h2>Legg til ansatt</h2>
+      <form>
+        <label for="fornavn">Fornavn: </label>
+        <input type="text" id="fornavn" name="fornavn">
+
+        <label for="etternavn">Etternavn: </label>
+        <input type="text" id="etternavn" name="etternavn">
+
+        <label for="e-post">E-post: </label>
+        <input type="email" id="e-post" name="e-post">
+
+        <label for="kontor">Kontor: </label>
+        <input type="text" id="kontor" name="kontor">
+
+        <label for="stilling">Stilling: </label>
+        <select id="stilling" name="stilling"></select>
+
+        <label for="kurs">Kurs: </label>
+        <input type="text" id="kurs" name="kurs">
+
+        <button type="submit" onclick="">Legg til ansatt</button>
+      </form>
     </section>
-    <section>
-        <p>Vis kun stilling:</p>
-        <button>Professor</button>
-        <button>Dekan</button>
-        <button>Rektor</button>
-        <button>Vaktmester</button>
-        <button>Lektor</button>
-    </section>
-    <h2>Ansatte</h2>
+   
     <main>
+      <h2>Ansatte</h2>
 
     </main>
-    <h2>Kursoversikt</h2>
-    <section>
-
-    </section>
     <footer>
         Innføring i programmering Eksamen 2025 Yacob
     </footer>
-    
+    <script src="../oppgave1/actions.js"></script>
+    <script> src="../oppgave1/register.js"</script>
 </body>
 </html>
