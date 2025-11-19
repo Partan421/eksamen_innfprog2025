@@ -1,0 +1,154 @@
+/* ===============================
+   GRUNNLEGGENDE SIDEOPPSETT
+   =============================== */
+body {
+  font-family: Arial, sans-serif;     /* Standard skrifttype */
+  margin: 0;                          /* Fjern standard margin */
+  background: #f0f2f5;                /* Lys bakgrunn */
+  color: #333;                        /* Mørk tekstfarge */
+}
+
+/* ===============================
+   TOPPBANNER MED INSTITUSJONSNAVN
+   =============================== */
+header {
+  background: #2c3e50;                /* Mørk blå bakgrunn */
+  color: white;                       /* Hvit tekst */
+  text-align: center;                 /* Sentrer teksten */
+  padding: 20px;                      /* Luft rundt */
+  font-size: 1.8em;                   /* Stor overskrift */
+}
+
+/* ===============================
+   FILTERKNAPPER – GJELDER ALLE <button>
+   =============================== */
+section.filtergruppe {
+  display: flex;                      /* Horisontal layout */
+  flex-wrap: wrap;                    /* Bryt linje ved behov */
+  justify-content: center;            /* Sentrer knappene */
+  gap: 12px;                          /* Avstand mellom knapper */
+  padding: 20px;
+  background: white;
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  background: #2c3e50;                /* Mørk blå bakgrunn */
+  color: #fff;                        /* Hvit tekst */
+  border: none;                       /* Fjern kantlinje */
+  padding: 12px 20px;                 /* Store knapper */
+  border-radius: 6px;                 /* Runde hjørner */
+  font-size: 1em;                     /* Normal skriftstørrelse */
+  font-weight: 600;                   /* Litt fetere tekst */
+  cursor: pointer;                    /* Håndpeker ved hover */
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #1a252f;                /* Mørkere blå ved hover */
+  transform: translateY(-2px);        /* Løft knappen litt */
+}
+
+button:focus {
+  outline: 2px solid #99c;            /* Fokusramme for tastaturbruk */
+  outline-offset: 2px;
+}
+
+/* ===============================
+   HOVEDSEKSJON FOR ANSATTE
+   =============================== */
+main {
+  padding: 30px 20px;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 1.5em;
+}
+
+/* ===============================
+   FLEXBOX-LISTE FOR ANSATTE
+   =============================== */
+main ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* ===============================
+   HVER ANSATTKORT
+   =============================== */
+main li {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+main li:hover {
+  transform: translateY(-5px);        /* Løft kort ved hover */
+}
+
+/* Toppfelt med navn */
+main li h3 {
+  margin: 0;
+  padding: 12px;
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* Informasjon under navnet */
+main li p {
+  margin: 8px 12px;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+/* ===============================
+   KURSOVERSIKT-SEKSJON
+   =============================== */
+#kursoversikt {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+}
+
+#kursoversikt h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+/* Liste med kurs */
+#kursoversikt ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* Hver kursboks */
+#kursoversikt li {
+  background: #e0ecff;                /* Lys blå bakgrunn */
+  border: 1px solid #99c;             /* Blå kantlinje */
+  border-radius: 6px;                 /* Runde hjørner */
+  padding: 8px 12px;                  /* Luft inni boksen */
+  font-size: 0.9em;                   /* Litt mindre skrift */
+}

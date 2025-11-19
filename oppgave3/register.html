@@ -3,36 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <title>Oppgave 3 Register</title>
 </head>
-<body>
-    <h1>Høgskolen JS</h1>
-    <section>
-        <button>Vis alle ansatte</button>
-        <button>Vis undervisere</button>
-        <button>Vis administrasjon</button><br>
-    </section>
-    <section>
-        <p>Vis kun stilling:</p>
-        <button>Professor</button>
-        <button>Dekan</button>
-        <button>Rektor</button>
-        <button>Vaktmester</button>
-        <button>Lektor</button>
-    </section>
-    <main>
-        <h2>Ansatte</h2>
-
-    </main>
-    <section>
-        <h2>Kursoversikt</h2>
-
-    </section>
-    <footer>
-        Innføring i programmering Eksamen 2025 Yacob
-    </footer>
-    <script src="../oppgave1/actions.js"></script>
-    <script> src="../oppgave1/register.js"</script>
-</body>
+    <body>
+        <h1>Høgskolen JS</h1>
+        <section>
+            <button onclick="visAlleAnsatte()">Vis alle ansatte</button>
+            <button onclick="visUndervisere()">Vis undervisere</button>
+            <button onclick="visAdministrasjon()">Vis administrasjon</button><br>
+        </section>
+        <section>
+            <p>Vis kun stilling:</p>
+            <button onclick="visProfessorer()">Professor</button>
+            <button onclick="visDekaner()">Dekan</button>
+            <button onclick="visRektorer()">Rektor</button>
+            <button onclick="visVaktmestere()">Vaktmester</button>
+            <button onclick="visLektorer()">Lektor</button>
+        </section>
+        <main>
+            <h2>Ansatte</h2>
+            <ul id="ansattListeRegister"></ul>
+        </main>
+        <section id="kursoversikt">
+            <h2>Kursoversikt</h2>
+            <ul id="kursoversiktListe"></ul>
+        </section>
+        <footer>
+            Innføring i programmering Eksamen 2025 Yacob
+        </footer>
+        <script src="../oppgave1/register.js"></script>
+        <script src="../oppgave1/actions.js"></script>
+        <script>
+            // Viser alle ansatte og kurs automatisk ved oppstart
+            window.onload = function() {
+            visAnsatteRegister();
+            visAlleKurs();
+        };
+        </script>
+    </body>
 </html>
