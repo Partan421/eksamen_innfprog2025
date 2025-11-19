@@ -23,6 +23,7 @@ def lungo(ordliste):
 def add(nytt_ord):
     prw.append(nytt_ord.strip())
 
+# Funksjon som legger til ord til ordliste
 #4
 add("objektorientert")
 
