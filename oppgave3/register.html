@@ -15,11 +15,11 @@
         </section>
         <section>
             <p>Vis kun stilling:</p>
-            <button onclick="visProfessorer()">Professor</button>
-            <button onclick="visDekaner()">Dekan</button>
-            <button onclick="visRektorer()">Rektor</button>
-            <button onclick="visVaktmestere()">Vaktmester</button>
-            <button onclick="visLektorer()">Lektor</button>
+            <button onclick="visEtterStilling('Professor')">Professor</button>
+            <button onclick="visEtterStilling('Dekan')">Dekan</button>
+            <button onclick="visEtterStilling('Rektor')">Rektor</button>
+            <button onclick="visEtterStilling('Vaktmester')">Vaktmester</button>
+            <button onclick="visEtterStilling('Lektor')">Lektor</button>
         </section>
         <main>
             <h2>Ansatte</h2>
@@ -37,7 +37,7 @@
         <script>
             // Viser alle ansatte og kurs automatisk ved oppstart
             window.onload = function() {
-            visAnsatteRegister();
+            visAlleAnsatte();
             visAlleKurs();
         };
         </script>

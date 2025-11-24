@@ -24,12 +24,12 @@
         <input type="text" id="kontor" name="kontor" placeholder="A111">
 
         <label for="stilling">Stilling: </label>
-        <select id="stilling" name="stilling" placeholder="Stilling"></select >
+        <select id="stilling" name="stilling"></select>
 
         <label for="kurs">Kurs: </label>
-        <input type="text" id="kurs" name="kurs" placeholder="Kurs">
+        <input type="text" id="kurs" name="kurs" placeholder="Kurs"><br>
 
-        <button type="submit" onclick="">Legg til ansatt</button>
+        <button type="submit" onclick="leggTilAnsatt(event)">Legg til ansatt</button>
       </form>
     </section>
    
@@ -41,14 +41,14 @@
     <footer>
         Innføring i programmering Eksamen 2025 Yacob
     </footer>
-    <script src="../oppgave1/actions.js"></script>
     <script src="../oppgave1/register.js"></script>
-    <script>
-            // Viser alle ansatte og kurs automatisk ved oppstart
-            window.onload = function() {
-            visAnsatteAdmin();
-            visAlleKurs();
-        };
-        </script>
+<script src="../oppgave1/actions.js"></script>
+<script>
+  window.onload = function() {
+    visAnsatteAdmin();
+    visAlleKurs();
+    fyllInnStillingsvalg(); // nå finnes den
+  };
+</script>
 </body>
 </html>
