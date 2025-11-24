@@ -2,11 +2,11 @@
 // 📁 STILLINGER MED KONTORPREFIKS
 // ===============================
 const stillinger = [
-  { navn: "Rektor", kontorPrefiks: "A" },
-  { navn: "Dekan", kontorPrefiks: "B" },
-  { navn: "Professor", kontorPrefiks: "C" },
-  { navn: "Lektor", kontorPrefiks: "D" },
-  { navn: "Vaktmester", kontorPrefiks: "V" }
+  { navn: "Rektor"},
+  { navn: "Dekan"},
+  { navn: "Professor"},
+  { navn: "Lektor"},
+  { navn: "Vaktmester"},
 ];
 
 // ===============================
@@ -217,5 +217,5 @@ const ansatte = [
     kontor: "D510",
     epost: "amanda.lie@hiof.no",
     kurs: ["Datasikkerhet i utvikling og drift"]
-  }
+  },
 ];
