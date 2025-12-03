@@ -1,5 +1,5 @@
 // ===============================
-// 🛠️ Hjelpefunksjon: formater kurs trygt
+// Hjelpefunksjon: formater kurs trygt
 // Brukes til å vise kurs som tekst. Hvis ingen kurs finnes, vises "Ingen kursansvar".
 // ===============================
 function formatKurs(kurs) {
@@ -10,7 +10,7 @@ function formatKurs(kurs) {
 }
 
 // ===============================
-// 👥 Vis alle ansatte (register.html)
+// Vis alle ansatte (register.html)
 // Tegner ut alle ansatte i <ul id="ansattListeRegister">.
 // ===============================
 function visAlleAnsatte() {
@@ -32,7 +32,7 @@ function visAlleAnsatte() {
 }
 
 // ===============================
-// 🔎 Filter etter stilling
+// Filter etter stilling
 // Viser kun ansatte med en bestemt stilling.
 // ===============================
 function visEtterStilling(stilling) {
@@ -56,7 +56,7 @@ function visEtterStilling(stilling) {
 }
 
 // ===============================
-// 👩‍🏫 Vis undervisere
+// Vis undervisere
 // Viser kun ansatte med stilling "Professor" eller "Lektor".
 // ===============================
 function visUndervisere() {
@@ -67,7 +67,7 @@ function visUndervisere() {
 }
 
 // ===============================
-// 🏢 Vis administrasjon
+// Vis administrasjon
 // Viser kun ansatte med stilling "Rektor", "Dekan" eller "Vaktmester".
 // ===============================
 function visAdministrasjon() {
@@ -78,7 +78,7 @@ function visAdministrasjon() {
 }
 
 // ===============================
-// 🔧 Hjelpefunksjon for register-listen
+// Hjelpefunksjon for register-listen
 // Brukes av filterfunksjonene til å tegne ut ansatte.
 // ===============================
 function renderAnsatteToRegister(list) {
@@ -99,7 +99,7 @@ function renderAnsatteToRegister(list) {
 }
 
 // ===============================
-// 🗑️ Admin-visning med slett-knapp
+// Admin-visning med slett-knapp
 // Viser ansatte i <ul id="ansattListeAdmin"> med en slett-knapp.
 // ===============================
 function visAnsatteAdmin() {
@@ -127,7 +127,7 @@ function visAnsatteAdmin() {
 }
 
 // ===============================
-// ❌ Slett ansatt
+// Slett ansatt
 // Fjerner en ansatt fra arrayen etter bekreftelse.
 // ===============================
 function slettAnsatt(fornavn, etternavn) {
@@ -147,7 +147,7 @@ function slettAnsatt(fornavn, etternavn) {
 }
 
 // ===============================
-// 📚 Kursoversikt
+// Kursoversikt
 // Viser en liste over alle unike kurs fra ansatte.
 // ===============================
 function visAlleKurs() {
@@ -179,7 +179,7 @@ function visAlleKurs() {
 }
 
 // ===============================
-// ➕ Legg til ny ansatt
+// Legg til ny ansatt
 // Legger til en ny ansatt basert på skjemaet i admin.html.
 // ===============================
 function leggTilAnsatt(event) {
@@ -214,7 +214,7 @@ function leggTilAnsatt(event) {
 }
 
 // ===============================
-// 📋 Dynamisk stillingsvalg (admin.html)
+// Dynamisk stillingsvalg (admin.html)
 // Fyller dropdown <select id="stilling"> med stillinger fra register.js.
 // ===============================
 function fyllInnStillingsvalg() {
