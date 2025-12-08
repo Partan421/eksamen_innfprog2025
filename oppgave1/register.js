@@ -43,11 +43,11 @@ const emner = [
 const ansatte = [
   // Rektor (1)
   {
-    fornavn: "Eva",
-    etternavn: "Lund",
+    fornavn: "Wilma",
+    etternavn: "Wiltersen",
     stilling: "Rektor",
     kontor: "A101",
-    epost: "eva.lund@hiof.no",
+    epost: "Wilma.Wiltersen@hiof.no",
     kurs: null
   },
 

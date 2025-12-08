@@ -1,15 +1,16 @@
 /* ===============================
-   GRUNNLEGGENDE SIDEOPPSETT
+  GRUNNLEGGENDE SIDEOPPSETT
    =============================== */
 body {
   font-family: Arial, sans-serif;     /* Standard skrifttype */
   margin: 0;                          /* Fjern standard margin */
   background: #f0f2f5;                /* Lys bakgrunn */
-  color: #333;                        /* Mørk tekstfarge */
+  color: hsl(0, 0%, 20%);  
+  padding: 1;                      /* Mørk tekstfarge */
 }
 
 /* ===============================
-   TOPPBANNER MED INSTITUSJONSNAVN
+  TOPPBANNER MED INSTITUSJONSNAVN
    =============================== */
 header {
   background: #2c3e50;                /* Mørk blå bakgrunn */
@@ -20,7 +21,7 @@ header {
 }
 
 /* ===============================
-   FILTERKNAPPER – GJELDER ALLE <button>
+  FILTERKNAPPER – GJELDER ALLE <button>
    =============================== */
 section.filtergruppe {
   display: flex;                      /* Horisontal layout */
@@ -55,7 +56,7 @@ button:focus {
 }
 
 /* ===============================
-   HOVEDSEKSJON FOR ANSATTE
+  HOVEDSEKSJON FOR ANSATTE
    =============================== */
 main {
   padding: 30px 20px;
@@ -69,7 +70,7 @@ main h2 {
 }
 
 /* ===============================
-   FLEXBOX-LISTE FOR ANSATTE
+  FLEXBOX-LISTE FOR ANSATTE
    =============================== */
 main ul {
   display: flex;
@@ -83,7 +84,7 @@ main ul {
 }
 
 /* ===============================
-   HVER ANSATTKORT
+  HVER ANSATTKORT
    =============================== */
 main li {
   flex: 1 1 250px;
@@ -118,7 +119,7 @@ main li p {
 }
 
 /* ===============================
-   KURSOVERSIKT-SEKSJON
+  KURSOVERSIKT-SEKSJON
    =============================== */
 #kursoversikt {
   margin-top: 40px;
