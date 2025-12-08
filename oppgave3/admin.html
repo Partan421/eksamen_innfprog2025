@@ -32,14 +32,17 @@
         <button type="submit" onclick="leggTilAnsatt(event)">Legg til ansatt</button>
       </form>
     </section>
-   
+  
     <main>
       <h2>Ansatte</h2>
       <ul id="ansattListeAdmin"></ul>
-
     </main>
+    <section id="kursoversikt">
+            <h2>Kursoversikt</h2>
+            <ul id="kursoversiktListe"></ul>
+        </section>
     <footer>
-        Innføring i programmering Eksamen 2025 Yacob
+        Innføring i programmering Eksamen 2025 Yacob Thurmann Zahid
     </footer>
     <script src="../oppgave1/register.js"></script>
 <script src="../oppgave1/actions.js"></script>
@@ -48,6 +51,7 @@
     visAnsatteAdmin();
     visAlleKurs();
     fyllInnStillingsvalg(); // nå finnes den
+    visAlleKurs()
   };
 </script>
 </body>
