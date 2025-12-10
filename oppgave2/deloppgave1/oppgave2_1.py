@@ -1,5 +1,6 @@
 #1
 #Array
+# = er nok i python mens i javascript må man bruke const/let
 prw = [
     "kompilator",
     "variabel",
