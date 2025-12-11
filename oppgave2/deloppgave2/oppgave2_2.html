@@ -13,12 +13,9 @@
 
             function finnLengsteOrd(liste) {
                 let lengste = "";
-                for (let i = 0; i < liste.length; i++) {
-                    let ord = liste[i];
-                    if (ord.length > lengste.length) {
+                for (let ord of liste) {
+                    if(ord.length > lengste.length) {
                         lengste = ord;
-                    } else {
-                        // gjør ingenting
                     }
                 }
                 return lengste;
@@ -26,13 +23,18 @@
 
             function skrivUtResultat() {
                 let resultat = finnLengsteOrd(ordListe);
-                console.log("Det lengste ordet i listen er: " + resultat);
+                console.log(`Det lengste ordet i listen er: ${resultat}`);
             }
 
             skrivUtResultat();
         }
 
         start();
+
+        //Tankegang for løsing av oppgave ovenfor
+        //Man kan fjerne else delen ettersom den ikke gjør noe for koden.
+        //For delen av koden er ikke optimal, ved å bytte det med en "for of" for å sjekke gjennom vært ord gjennom at variabelen ord får verdien av de forskellige ordene i ordlisten. Fordelen med denne metoden er at man ikke trenger å huske på indeksen.
+        //Istedet for bruk av fnutter kan vi heller bruke template literals for å gjøre det bedre
 
         //Denne koden regner ut gjennomsnittsalderen til en gruppe personer.
         function startProgram() {
@@ -44,33 +46,29 @@
             ];
 
             function hentAldre(liste) {
-                let alderArray = [];
-                for (let i = 0; i < liste.length; i++) {
-                    let person = liste[i];
-                    alderArray.push(person.alder);
-                }
-                return alderArray;
+                return liste.map(person => person.alder);
             }
 
             function regnUtGjennomsnitt(alderArray) {
-                let sum = 0;
-                for (let i = 0; i < alderArray.length; i++) {
-                    sum = sum + alderArray[i];
-                }
-                let gjennomsnitt = sum / alderArray.length;
-                return gjennomsnitt;
+                const sum = alderArray.reduce((acc, alder) => acc + alder, 0);
+                return sum / alderArray.length;
             }
 
             function visResultat() {
                 let alderArray = hentAldre(personer);
                 let gjennomsnitt = regnUtGjennomsnitt(alderArray);
-                console.log("Gjennomsnittsalderen er " + gjennomsnitt);
+                console.log(`Gjennomsnittsalderen er: ${gjennomsnitt}`);
             }
 
             visResultat();
         }
 
         startProgram();
+
+        //Tankegang for løsning av oppgave ovenfor
+        //Sånn som i den første koden kan vi fikse på for loopen ganske mye, ved bruk av map og en arrow function kan vi optimalisere koden ganske mye.
+        //For den andre funksjonen kan vi bruke en reduce, ved bruk av acc har vi en variabel som samler på tallene som kommer i alder variabelen. alderArray.lenght samler på mengden personer i ett tall, mens sum er total summen av alle aldrene.
+        //Vi kan bruke Template literals i console.log for å gjøre det bedre.
     </script>
 </body>
 </html>
