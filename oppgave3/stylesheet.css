@@ -42,7 +42,7 @@ button {
   font-size: 1em;                     /* Normal skriftstørrelse */
   font-weight: 600;                   /* Litt fetere tekst */
   cursor: pointer;                    /* Håndpeker ved hover */
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 button:hover {
