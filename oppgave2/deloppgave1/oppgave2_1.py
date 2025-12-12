@@ -18,7 +18,7 @@ prw = [
 #lager en funksjon kalt for lungo, den tar imot info fra parameteren ordliste
 #if delen sjekker først om listen er tom, men fordi den bruker not blir resultatet true hvis listen er tom, hvis ikke returneren den funksjonen None
 #Return max leter etter det lengste ordet i listen.
-#key=len leter etter det lengste ordet i ordlisten i dette tilfellet.
+#key=len finner det lengste ordet i ordlisten.
 def lungo(ordliste):
     if not ordliste:
         return None
