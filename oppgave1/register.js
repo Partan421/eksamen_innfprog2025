@@ -1,5 +1,5 @@
 // ===============================
-// 📁 STILLINGER MED KONTORPREFIKS
+// STILLINGER MED KONTORPREFIKS
 // ===============================
 const stillinger = [
   { navn: "Rektor"},
@@ -10,7 +10,7 @@ const stillinger = [
 ];
 
 // ===============================
-// 📚 EMNER SOM KAN TILDELES KURSANSVAR
+// EMNER SOM KAN TILDELES KURSANSVAR
 // ===============================
 const emner = [
   "Innføring i design av digitale produkter",
@@ -38,7 +38,7 @@ const emner = [
 ];
 
 // ===============================
-// 👥 HOVEDLISTE FOR ANSATTE
+// HOVEDLISTE FOR ANSATTE
 // ===============================
 const ansatte = [
   // Rektor (1)
